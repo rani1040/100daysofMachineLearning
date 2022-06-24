@@ -1,0 +1,22 @@
+Batch vs Online Machine
+
+Production is a server on which code is going to run.
+Production Enviornment -- when we have compelted our model  we want our client to look at it, so we will deploy our model on servers by sharing our ip address with client ,so that rhye can access our application, this is knowan as production enviornment.
+Development Enviornment -- when we train our model on our own machines ,where we are writting the code to train so this known as development enviourment.
+
+How our model behave on server:
+
+Batch Learning:
+***************
+
+Where we train our model with entire data is known as batch learning ,non increment training ,we wont train our model on servers because it is costly and time consuming.
+we generally  train  our model on local machine then deploy iton server.
+
+problem: static ,not learning new ,not constanly evolving with new data,once it deployed on server not learn anymore,we have to retrain 
+How? 
+----people do: data updating ,pull out data data mergee new and old and train and test then again deploy(within week or 24 hours)
+
+Disadvantage:
+Lots of data:train with whole data only then big data not able to do 
+Hardware Limitation: Defence system -- no network
+Availability --social media --update on social media 24 hours
