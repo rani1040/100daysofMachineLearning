@@ -1,0 +1,22 @@
+Challenges in Machine Learning
+
+
+1.Data Collection --  web scrapping or from api
+
+2.Insufficient Data -- not labeled data
+
+3.Non Rpresentative Data/Poor Representation of data -- cause sampling noise --> due to biasness samping bias --> still not representing
+
+4. Poor Quality of Data -- Very impt
+
+5.Irrelevant Features --Garbage in Garbage out
+
+6.Overfitting
+
+7.Underfitting
+
+8.Software Integration
+
+9.Offline Learning and Delopyment
+
+10.Cost Involved
