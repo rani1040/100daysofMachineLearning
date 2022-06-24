@@ -1,0 +1,26 @@
+Whenever we try to learn to something about a topic their are generally two method one coould follow
+1. he/she will memorise everything about topic --Memorizing
+2. he/she will try to understand concept behind that topic -- Generalising
+
+Instance Based :
+****************
+
+No concept of training and learning  model, whenever new points comes we react accordingly.
+Focus on Similarity 
+Example :
+knn algorithm
+kernel function
+
+
+Model Based Learning: model is set of parameter .
+*********************
+
+try to draw mathemetical function /try to draw curve.
+decision function --classify new point.
+you dont require data points as you have learn pattern.
+
+Example:
+Linear Regressor
+Logistic Regressor
+Decision Tree
+
