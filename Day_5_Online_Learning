@@ -1,0 +1,61 @@
+Online Leaning
+*************
+performance increased based on your usuability.
+Dynamically Train model on server.
+we train our model on mini batch (small chunks of data ) of data and train squentially incremently.
+
+DATA --> MODEL ---> TEST ---> SERVER  <--- data --data --data
+                                |
+                                |
+                                v
+                           (predict and learn)
+         
+         
+ Example : swift key keyboard,youtube,alexa 
+ 
+ When to you online learning?
+ when there is concept drift means when your promble  is changing volantryly ,example stock market ,ecommerce
+ when you want to save money
+ 
+ 
+ How to implement?
+ Using Python
+ 
+ Learning Rate
+ *************
+ 
+ 
+ Out of Core Learning  --processing big data
+ *******************
+                       data
+ ________________     ^ 
+ |               |   /-->data          --->model --> evaluate model--->server
+ | data set      |   --> data
+ |               |   \
+ |               |    V
+ _________________     data
+ 
+            
+            ^
+            |
+ ---------------------------
+        Offline Learning
+        
+        
+  Disadvantage:
+  
+ Tricky to use  it new technology ,no assurace , unstable
+
+  Risky : Model depend to incomming data , chances of being biased.
+  
+  
+  Solution:
+  
+  Anomaly detection
+  
+  
+  
+  
+ 
+ 
+ 
