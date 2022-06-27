@@ -1,0 +1,49 @@
+3 sns datasets are:
+
+* flights
+* iris
+* tips
+
+
+1.Numeric Numeric Relation with SCATTER PLOT
+    sns.scatterplot(tips['total_bill'],tips[tip])
+    hue - one more column to know more -- 3 variable -----|
+    style=df['smoker'] -4 variable                        |--- multivariant
+    size=df['size'] -5 vaiable                        --- |
+
+
+2. Numeric -Categorial with BARPLOT 
+     y axis = numeric, x axis=categorial
+     sns.barplot(titanic['pclass'],titanic['fair'],hue=titanic['sex'])
+   
+   
+  
+3. Numeric - Categorial with BOXPLOT
+     plotting seperate plot together
+     sns.boxplot(titanic['sex'],titanic['age'])
+     
+ 
+4. Numerical- Categorial -- DISTPLOT  --VIMP
+     sns.distplot(titanic[titanic['surived']==0]['age'],hist=false)
+     sns.distplot(titanic[titanic['survived]==1]['age'])
+     
+     
+5. Categorial- Categorial HEAT MAP
+     pd.crosstab(titanic['pclsaa'],titanic[survied'])
+     visualize
+     sns.heatplot(pd.crosstab(titanic['pcalss'],titanic['survived'])
+     better measure is percentage of probabiltiy
+     titanic.groupby("pclass").mean()['survived"].plpt(kind='bar')
+     
+6. Categorial- Categorial CLUSTER MAP
+     sns.clustermap(pd.crosstab(titanic['Parch'],titanic['Survived'])
+     tendograms-- capture hierarichal rlshp btwn data  
+     
+7. PAIR PLOT -COLECTION OF SCATTER PLOT
+    sns.pariplot(data)
+    combination between itself shown by histogram
+    hue --can pas
+
+
+8.LinePlot (Numeric -Numeric)-- time based data
+    flight.groupby('year').sum().reset_index()
