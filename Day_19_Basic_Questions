@@ -1,0 +1,31 @@
+To understand data better we need to ask some basic first :
+
+Ques : What are the basics question that  you should ask when you get data?
+
+
+1. How big the dayta is ?
+--> df.shape
+
+2. How does that data look like?
+ --> df.head()
+     df.sample(5) -- give random row 
+
+
+3. what is data type of cols?
+ --> df.info() #help in optimization
+
+
+4. Are there any missing values?
+--> watch out missing value
+    df.isnull.sum() -gives the number of missing values
+
+5. How does the data look mathemetically?
+--> df.describe() -- only for numeric columns
+
+6. Are there duplicate values?
+-->df.duplicated().sum()
+    df.drop_duplicated()
+
+7. How is the correlation between cols?
+--> which   columns are independent ,means not related to our output so that we can easily drop that column.
+   df.corr()['survied']  values between -1 and 1
