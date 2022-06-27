@@ -1,0 +1,27 @@
+Feature Engineering is the process of using domain knowledge to extract features from raw data. 
+These features can be used to improve the performance of machine learning algorithms.
+
+
+-Feature Engineering
+
+  1. Feature Transformation -- changing into form which has good perfromance .
+  
+     1. Missing Values Imputation -- remove or fill that missing values (mean,median) 
+     
+     2. Handling Categorial Value -- converting one form into anothore (e.g String to numeric).
+     
+     3. Outlier Detection -- Principle
+     
+     4. Feature Scaling  -- 
+     
+  2. Feature Construction --create a complete new columns ,based on intution
+  
+  
+  3. Feature Selection -- we have many input columns but we are selecting some inputs (extracting importance feature )
+     
+     MNIST dataset - 28*28 resolution -784 pixel 
+    
+  4. Feature Extraction -- from given feature creating new feature -pca 
+    example room, washroom, price remove one column-- sqft area,price
+  
+  
