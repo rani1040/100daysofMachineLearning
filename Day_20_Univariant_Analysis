@@ -1,0 +1,48 @@
+Link : 6 min Read https://towardsdatascience.com/exploratory-data-analysis-8fc1cb20fd15
+EDA stands for explanatory Data Analysis ,it is an approch to analyze the data using visual techniques. 
+it is used to discover trends , patterns or to check assumptions with the help of statistical summary and graphical representation.
+
+The four types of EDA are univariate non-graphical, multivariate non- graphical, univariate graphical, and multivariate graphical.
+
+1. Univariate Analysis  works by examining the effects of a singular variable on a set of data, it simply takes data and provides a summary and associated patterns.
+   Tables, charts, polygons, and histograms are all popular methods for displaying univariate analysis of a specific variable (e.g. mean, median, mode, standard variation, range, etc). 
+
+    There are two type of Data:
+    1. Numeric
+    2. Categorial
+
+First question we start with is What is the nature of Columns data and what is our output feature ?
+---is it Numeric and Categori data.
+
+1.Categorial Data
+
+    which column is telling about our output column?
+    calculate its frquency count with
+          count plot 
+          sns.countplot(df['survied])
+          df['survied'].value_count().plot('kind=bar)
+          mean_fair_price
+          -->pie char 
+          autopct=*.2f   // percentage
+
+                      Seaborn and matplotlib padhle behn please 
+
+2. Numerical data
+     if data is continous then calculate max,mean 
+
+      a. Histogram create range -- bins-- to see distribution
+          plt.hist(df['age'],bins=50)
+
+      b. Distplot
+          sns.distplot(df['age'])  #kernel density distribution probability  density function
+
+      c. Bloxplot :gives 5 number summary
+          sns.boxplot(df['fare])
+              median 
+              q1--25th percentile ,q3=75 percentile
+              minimum=q1-1.5*iqr
+              iqr=inter quatile range (q3-q1)
+               outlieer
+               
+      d.  minimum and maximum value
+           skew()
