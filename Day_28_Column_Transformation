@@ -1,0 +1,37 @@
+Age      |    city  | Gender  | Review   |
+         |                    |          |
+simple   |  One Hot  Encoding | Ordinal  |
+Imputer  |                    | Encoding |
+  |                |              |
+  |                |              |
+  V                V              V
+ [ ]              [ ]            [ ]  ---> numpy array
+ 
+    |                             |
+     \             |             /
+       \           |            /
+            [             ]   
+ 
+ if we are performing Feature Enginerring , to transform different columns differnetly can be difficult 
+ we need to apply different techniques it could not be efficient.
+ 
+ age -- numerical -- scaling / just leave today
+ gender -- nominal 
+ city -- nominal
+ cough - ordinal
+ fever -- missing 
+ 
+ Steps -- split 
+ simple imputer object then fit_transform fever
+ ordinal import object fit transfo9rm
+ one hot encoder object ,multicordinarlity remove 
+ seperate age 
+np.concatenate  all
+ 
+ Using column transformer 
+ create object 
+ transformer list - [pass in tuple(name)
+ (name of transform) (transformer object),(column name), ]
+ remender = 'drop' or ;'passthrough'
+ 
+fit_transform
