@@ -1,0 +1,47 @@
+One Hot Encoding
+1. create one column for each category.
+
+  Color    |   color_y |color_b  |color_r
+  yellow   |     1     |  0      | 0
+  blue     |     0     |  1      | 0
+  red      |     0     |  0      | 1
+  
+Multicollinearity : input columns cannot have maths relnship , is there mathemetical relationship if they have ,then remove this
+if there are n category then we will be creating n-1 columns ,otherwise there will be dummy Variable trap.
+ 
+Dummy Variables are the columns which we have  genereted color_y,color_b and color_r.
+and due to generation of this dummy variable there will be problem of multicollinearity as sum of all three column of eeach color is 1 .
+hence we will drop columns 1.
+
+
+OHE using most frequent Variables
+
+if nominal categorial data has more category then for each category there will be one column for each.
+then this will create lots of columns which will increases the dimensionality of our data and slow data preprocessing.
+
+other than most frequent category we will be transfering into one other category .
+
+
+Steps :
+value_counts()
+try own 
+inbuilt -- .get_dummy(df.columns['fuel','owner'])
+predict own columns
+drop_first(True)
+
+Pandas get_dummies doesnt remeber about the columns , it gives different column sequence every single time you run thats why we generally avid this in machine learning projects.
+
+1. train test split
+
+preproceesing
+OHE(drop=first)
+saprse=true
+-column transformer
+product sparse matrix 
+fit ()
+transform ()
+hstack()
+
+threshould =100
+other
+
