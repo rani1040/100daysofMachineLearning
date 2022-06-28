@@ -1,0 +1,40 @@
+Normalization
+it is used to make units same.
+Type of Normalization: 
+
+1. MINMAX SCALING :
+
+   formula -- xi=(xi-min)/max
+   class -- MinMaxScaler 
+   when used -- when you see too much difference between two features
+   
+   
+   
+2. Mean Normalization :
+
+   formula =(Xi-xmean)/(Xmax-Xmin)
+   class = No 
+   used when -- numeric data given and centered data given
+   
+   
+   
+ 3. MaxAbsScaling :
+ 
+   formula =Xi/|Xmax|
+   class = MaxAbsScaler
+   when_used =spared data ,when lots of zero
+   
+   
+ 4. Robust Scaling :
+   formula = (Xi-Xmedian)/IQR              IQR=75%-25%
+   when used = when there is outlier
+ 
+ 
+
+   
+ 
+Is feature Scaling Required ?
+--yes
+----Standardization or Normalization?
+------- Standardization --mostly
+------- Normalization --if you know the value of minimum and maximum will be in this particular range then use MINMAX SCALING ,example --CNN(computer neural network).
