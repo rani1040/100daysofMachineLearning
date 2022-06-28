@@ -1,0 +1,27 @@
+Data is majorly divided into two parts : 
+Numeric : age , weight ,height
+Categorical : gender ,nationality,branch
+
+Types of categorical data :
+ 
+ 1. Nominal data : no relationship between categories their is no border.
+     States - MP,UP,Bihar
+     Branch - CS,Civil
+     
+ 2. Oridinal : there is order 
+     Good and bad Excelent
+     
+ 
+Converting Categorial data into Numerical data :
+ 
+1.  Ordinal Encoding --Ordinal data
+data - education --categorial -- ordianl (pg>ug>hs)
+          hs
+          ug
+          pg
+          hs
+          pg
+          ug
+ One Hot Encoding  -- Nominal data
+ Label Encoding 
+ 
