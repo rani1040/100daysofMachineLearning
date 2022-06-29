@@ -1,0 +1,53 @@
+Start time : 10: 7 AM
+
+Random Imputation : Selecting Random number from rest of the dataset to fill the Missing Values in Dataset.
+Apply for both numeric and categorial data.
+best part about this technique is that both  distribution and variance both are intact mean they wont change why?
+because probabiltity og getting the most occcuring element is more hence  it will nit change.
+not abailable in sklearn , but available in pandas.
+good for linear algorithms , creates randomness in tree based algorithms.
+covariance gets distrrubte.
+Memory heavy for deployment as we need to store training set to extract values from and replcae the NA in coming observation.
+
+
+NUMERICAL DATA - HANDLING MISSING VALUES
+
+df.isnll().mean()*100 percentage of missing values
+
+X = Feature
+y= target
+
+create completly new column 
+* fetch the missing values/null values
+* replace missing value (using sample)
+
+Missing value of X_train_imputer= all nont null values of age * sample values
+
+plot both distribution and see 
+and check variance 
+and see covarianc it will get distrub
+no difference in outlier.
+
+In production on same input you are getting different values to avoid that what we can do is
+generate same random number for same input .
+
+
+CATEGORIAL MISSING VALUE
+
+-- not good when large missing value.
+
+MISSING INDICATOR 
+create new column have two values only true or false.
+ML model learn about differentiate .
+
+MissingIndicator class 
+mi has attributes -- features.
+SimpleImputer(add_indicator=True)
+
+
+4. How can we automatically Select Value for  Imputation
+Grid Search Cv
+
+
+
+
