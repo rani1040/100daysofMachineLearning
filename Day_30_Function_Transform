@@ -1,0 +1,48 @@
+What happen when we apply function transformer ?
+    our probability density function turns into norma distribution function .
+    around which calculations gets easy and many algorithms like linear and logistic regression want this
+    type of distribution .
+  
+Function Transformer : 
+    * log 
+    * reciprocal
+    * square and square root 
+    * custom transformer 
+
+
+How to find if data is normal ?
+1. seaborn displot 
+2. pandas skiwed() function
+
+3. QQ plot : more the points on 45 degree line it is normally distributed :
+
+      1. Data too peaked in middle --->  Line deviate  
+      2. Skewed Data --> away from line data points
+      3. Skewed Left --> away from line at bottom
+      4. Skewed Right --> away from line from top 
+      5. Fat tails --> away from both top and bottom
+      6. Thin Tail --> close to line
+      
+ 1. LOG TRANSFORM -- it will make data normally distribute 
+       convert additive scale to muttiplicative scale .
+       Linearly distributed.
+       not work -ve value.
+       it will bring right skewed data into middle.
+       log make data into equal scale
+ take log of all value 
+ 
+ 
+ 2. Reciprocal  Transform 1/x
+      samll value --> large 
+
+      value
+      znd vice versa
+ 
+ 3. Square root Transform :
+ left skweked
+ 
+ 
+ 
+ 
+ 
+ 
