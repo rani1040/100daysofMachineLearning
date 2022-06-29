@@ -1,0 +1,29 @@
+
+BOX COX Transform : The Exponent here is a variable called lambda that ovieries over the range -5 to 5, and in the process of 
+searching , we examine all value of lambda . finally we choode the optimal value(resulting in the best 
+approximation to a normal distribution for your variable.
+             
+Formula              
+                        {  
+                           (Xi^(lambda)-1)/lambda     if lambda !=0
+   Xi ^ (lambda) =          In(Xi)                    if lambda =0
+                         }
+                         
+  Two techniques to calculate this is Maximum Likelihood and Bayesian Statistics.
+  
+  
+ RESTRICTION                      
+    not valid for negative and zero
+    number should greater than zero
+    
+    
+ YEO- JOHNSON : This transformation is somewhat of an adjustment to the Box=Cox transformation , by which we can apply it to the negative number.
+ 
+                     {
+                     (Xi+1)power(lambda)-1)/lambda           if lambda !=0 and Xi>=0
+                     In(Xi)+1                                if lambda=0  and Xi>=
+ Xi(lambda)=         -[(-Xi+1)^2-lambda -1)/(2-lambda)]      if lambda !=2 and Xi<0
+                     -In(-Xi+1)                              if lambda =2 and Xi<0
+                   }
+
+ 
