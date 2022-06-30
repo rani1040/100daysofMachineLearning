@@ -1,0 +1,33 @@
+What is Mixed Data?
+mixed data is something in which you will be finding numerical and categorical data together .
+you have to split this data into two seperate columns to work furthur ,below is the example of mixed data.
+example
+
+B5 |        B  |   5
+C2 |        C  |   2    
+ER3|        ER |   3
+F5 |        F  |   5
+
+Another Example
+3
+r
+5
+2
+4
+y
+d
+4
+u
+
+df['numeric']=pd.to_numeric(df["col_name"],errors='coerce',downcast='integer')
+df['categorical']=np.where(df["numeric"].isnull.df['col_name"],np.nan)
+
+st.extract('/d+')
+str[0]
+
+
+df['ticket_num']=df['ticket'].apply(lambda s:s.split()[-1])
+df['ticket_num']=pd.to_numeric(df['ticket_num'],errors='coerce',downcast='integer')
+
+df['ticket_cat']=df['Ticket].apply(lambfa s:split()[0])
+df['ticket)cat']=np.
