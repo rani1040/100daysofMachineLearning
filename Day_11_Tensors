@@ -1,12 +1,36 @@
-Why Tensor?
-It is a data structure.
-Libraries(Skit Learn )using tensor as data structure.
+What is tensor object?
 
-What is Tensor?
-it is a container for number .
-matrix and vector are known as tensor.
-general term for n dimensional
+:) Tensors are simply mathematical objects that can be used to describe physical properties,
+just like scalars and vectors. In fact tensors are merely a generalisation of scalars and vectors
+a scalar is a zero rank tensor, and a vector is a first rank tensor.
+
+RANK 
+The rank (or order) of a tensor is defined by the number of directions
+(and hence the dimensionality of the array) required to describe it.
+
+e.g
+
+electrical conductivity is a second rank tensor and can be specified by 9 independent coefficients,
+which can be represented in a 3×3 matrix.
+j1 = σ11E1 + σ12E2 + σ13E3
 
 
-Scalers(1,2,3,4,5,6) ares 0D tension -they have zero dimension
+Other examples of second rank tensors include electric susceptibility, thermal conductivity, stress and strain.
+They typically relate a vector to another vector, or another second rank tensor to a scalar.
+Tensors of higher rank are required to fully describe properties that relate two second rank tensors
+(e.g. Stiffness (4th rank): stress and strain) or a second rank tensor and a vector (e.g. Piezoelectricity (3rd rank): stress and polarisation).
+
+:) It is a data structure.
+:) Libraries(Skit Learn )using tensor as data structure.
+:) it is a container for number .
+:) matrix and vector are known as tensor.
+:) general term for n dimensional.
+
+
+
+Scalers(1,2,3,4,5,6) ares 0D tension -they have zero dimensionhttps  
+
+
+reference :
+https://www.doitpoms.ac.uk/tlplib/tensors/what_is_tensor.php
 
