@@ -1,0 +1,39 @@
+Software Development Life Cycle (SDLC) : is a process used by the software industry to design, develop and test high quality softwares.
+The SDLC aims to produce a high-quality software that meets or exceeds customer expectations, reaches completion within times and cost estimates.
+
+Steps :
+
+1. Framming the Problem
+
+2. Gathering Data
+
+3. Data Preprocessing -- remove duplicates, outliers, scalling, standorized
+
+4. Exploratory Data Analysis :univariant analysis, bivarriant analysis,imbaalance--balance,visualize
+
+5. Feature Enginerring and Selection: changing columns
+
+6: Model Training Evaluation and Selection : performance metrix -- how good our model is, hyperparameter learning ,esemeble learning
+
+7: Model Deployement : create application -- Binary file (pickle) ---> API(url gives-->json data file)  ---> User ---> Input ---> Python
+                                                   |
+                                                   V
+                                                Server
+                                                
+8: Testing : A/B testing 
+
+9.Optimize : backup, data backup, automation setup, load  balancing, frequently retrain, roooting-perform decline
+
+
+
+Following are the most important and popular SDLC models :)
+
+1. Waterfall Model
+
+2. Iterative Model
+
+3. Spiral Model
+
+4. V-Model
+
+5. Big Bang Model
