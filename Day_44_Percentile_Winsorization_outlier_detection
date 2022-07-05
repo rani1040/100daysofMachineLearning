@@ -1,0 +1,10 @@
+99 percentile means 90 % person people are less than you.
+maximum means = 100 perecentile.
+
+How to detect outlier .
+
+* decide amount from both side of distribution lets say 1 ,means values<1 outliers and values>99 outliers
+
+After that 
+* Remove
+* Capping : fill with just below threshold value -- Winsenorization Techniques
