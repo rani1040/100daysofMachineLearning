@@ -1,0 +1,16 @@
+When to use ?
+-- when distribution is skewed .
+
+Knowdlege :)
+  * what is boxplot ?
+      100 % percentile means all the value is less than x value .
+       0 % percentile means this is the minimum value ,no value is less than this value
+       
+  * what is IQR ? 
+  : ) Q3-Q1
+  
+      whisker_MIN =Q3 + 1.5*IQR   
+      whisker_MAX =Q1 -1.5*IQR
+
+    
+ 
