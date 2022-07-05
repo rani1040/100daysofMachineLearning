@@ -1,0 +1,24 @@
+1. Z_score Assumptions :) it should be normally distributed (bell curve) or close to normall curve .
+we can assume betqeen the range of :
+  mean to 1 std deviation there are 68.2% observation .
+  (-2std  2std)=95.4%
+  (-3std  3std) =99.7%
+
+if any value is outside this range then treat it as outlier 
+
+Z score:
+           Xi-mean
+  X`    =  -------
+             std
+             
+2.how to treat this outlier :)
+
+  * Trimming : remove rows with outliers .significant amount of data is being remove when their is high outliers.
+              approch 1: remove columns with highest and lowest
+              approch 2: zscore 
+  * Capping : Cap outliers . means values less then minimum make it minimum and greater than naximum make it maximum.
+  
+
+             
+             
+             
