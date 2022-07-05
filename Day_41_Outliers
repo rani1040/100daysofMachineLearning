@@ -1,0 +1,90 @@
+1. What is Outlier ?
+
+:) Outliers are the values that look different from the other values in the data.
+-- data points which differe from other data points.
+
+Reasons for outliers in data ?
+  * Errors during data entry or a faulty measuring device (a faulty sensor may result in extreme readings).
+  * Natural occurrence (salaries of junior level employees vs C-level employees)
+
+data of student number of hours study and marks obtain,their is linear trend , some outlier study less and get more marks .
+they are hidden.
+
+
+
+Problems caused by outliers ?
+    * Outliers in the data may causes problems during model fitting (esp. linear models).
+    * Outliers may inflate the error metrics which give higher weights to large errors (example, mean squared error, RMSE).
+
+2. When outlier is dangeorous ?
+age data -- someone age is 300 that  means this is wrong it is not possible..
+
+3. When to Keep Ouliers ?
+Situations like anamoly detection algorithm.
+when outliers are getting justified 
+for example in above example we can create a new column iq then it will justify the outlier.
+
+Effects of Outliers On ML Algorithm ?
+Performance reduce in : Weight based algorithm.
+Linear Regression
+Logistic Regression
+Ada boost 
+Deep Learning
+
+Less effect of outlier on : tree based algorithm
+Random Forest 
+Decision tree
+gradient boosting
+
+
+3. How to treate Outlier ?
+
+1. Trimming : remove outlier 
+  * fast 
+  * data gets thin
+  
+2. Capping : put limit, example number less than 1 gives it 1 and number greater than 90 makes all 90.
+
+3. treate outlier as missing value
+
+4. Discritization -- numerical data into brackers 
+example 0-10,10-20,30-40,40-50
+we treat greater than 50 as 50
+
+
+4. How to detect Outlier ?
+
+if your data (column)mis normally distributed then 
+      - 1 std and 1 std =68.2 % observation
+      -2 std and 2 std = 95.4%
+      -3 std and 3 std = 99.7% observation
+
+      if particular observation is outside range of 
+      (mean-3*std ,mean*3std) we treat it like an outlier .
+      
+ if data is skewed :
+     IQR Proximity rule 
+     plot boxplot and data should be in range of min and max
+     minimum value = Q1-1.5*1QR 
+     maximum value =Q3+1.5*IQR
+     
+  3. Percentile Based approch :for  other distribution 
+  
+    if observation is outside 97 or 99 percentile then outlier.
+
+    if observation is outside 5 percentile then outlier
+    
+    
+    
+    TECHNIQUE WE WILL BE LEARNING ARE :
+      Z SCORE 
+      IQR FILTERINghttps://towardsdatascience.com/outlier-detection-methods-in-machine-learning-1c8b7cca6cb8#:~:text=Presence%20of%20outliers%20may%20cause,building%20a%20machine%20learning%20model. 
+      PERECENTILE
+      WINSERZATION
+
+  
+  
+ https://towardsdatascience.com/outlier-detection-methods-in-machine-learning-1c8b7cca6cb8#:~:text=Presence%20of%20outliers%20may%20cause,building%20a%20machine%20learning%20model.
+
+
+
