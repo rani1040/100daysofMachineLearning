@@ -1,0 +1,32 @@
+we have columns we called them features 
+features are known as dimensionals.
+curse of features .
+as number of features increase -- model become complex
+optimal number of features after that model performance decreases.
+
+Handwriiten datasets-- 784 28*28 
+
+Curse of Dimensionality :
+
+High Dimension data 
+
+1 Images 
+2 Text Data 
+
+Problem :
+Sparsity :
+
+finding your wallet on road is easy as its one dimension
+as compare to in building and playground .
+
+
+Dimensionality Reduction  :)
+
+* Feature Selection
+    * forward selection 
+    * backward elemination
+    
+* Features Extraction
+    * PCA
+    * lda
+    * tsne 
