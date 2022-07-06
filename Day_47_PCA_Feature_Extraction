@@ -1,0 +1,79 @@
+Unsupervised technique
+Old feature extraction 
+
+Main goal :
+reduce curse of dimensionality 
+
+Analogy :
+photographer taking photo of 3d stadium in 2d frame 
+
+pca tries to bring high dimensional data into low dimension while keeping ascence of data .
+
+BENIFITS / REASON TO USE PCA
+
+1. Faster execution of algo ( High dim --> low dim ,size reduce, algo run faster ,save computation)
+2. Visualization -- reducing n dim ---> 2/3 dim
+
+
+Geometric Intution 
+
+
+3 columns
+no of rooms , price of room, no of grocery shop nearby(week parameter)
+
+How feature selection work ?
+if you have 5 col ,we will took only imp features to predict output.
+
+if you have no domain knowdlege then how to select columns .
+
+plot 
+xm -- number of rooms
+y  -- no of grocery
+
+if no direct relation. then  select shadow of which feature on axis is more.
+select feature with more variance.
+
+
+lets say changes in data 
+no of rooms ,no of washrooms,price
+price govern by both .
+feature selection is not imp. maths proff --  linear relationship ,projection on x axis ,spread of data on x and y are almost comparable
+variance same
+
+Feature Extraction solve above problem 
+
+we can do -- create single columns using input columns
+size of flat and price 
+
+As a datascientist , how to do when you dont have domain knowledge then
+graph is linear , variance same
+pca find new set of axis ,by rotating 
+now check variance on both axis d and d` and we see that d>d`, so will keep d 
+you will get priciple component pc1 and pc2 vqariance on pc1>pc2 
+now transform pc
+no of pc <=number of original feature of data.
+
+mean=0 of (-5,5)
+                            central tendency 
+mean=0 of (-10,10)
+
+difference between two data set
+variance is propotional to spread,not exqactly spread 
+
+variance =(Xi-Xmean)^2/n
+
+mean absolute deviation also define spread but 
+mod is not differential to 0 ,whereas 
+square is differential thats why we use variance .
+
+Variance tell us about spread about data.
+Why Variance is Important ?
+
+
+
+project all point on axis , calculate variance it will tell spread.
+
+
+
+
+
