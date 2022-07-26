@@ -1,48 +1,67 @@
 Link : 6 min Read https://towardsdatascience.com/exploratory-data-analysis-8fc1cb20fd15
+
+EDA is a technique to understand about  data in and out . there are various ways to do it one of which is univariant analysis.
+
 EDA stands for explanatory Data Analysis ,it is an approch to analyze the data using visual techniques. 
 it is used to discover trends , patterns or to check assumptions with the help of statistical summary and graphical representation.
 
 The four types of EDA are univariate non-graphical, multivariate non- graphical, univariate graphical, and multivariate graphical.
 
-1. Univariate Analysis  works by examining the effects of a singular variable on a set of data, it simply takes data and provides a summary and associated patterns.
+1. Univariate Analysis (means working on independent variables(columns) to understand it )  works by examining the effects of a singular variable on a set of data, it simply takes data and provides a summary and associated patterns.
    Tables, charts, polygons, and histograms are all popular methods for displaying univariate analysis of a specific variable (e.g. mean, median, mode, standard variation, range, etc). 
 
     There are two type of Data:
     1. Numeric
     2. Categorial
 
+Start your analysis from left to right .
 First question we start with is What is the nature of Columns data and what is our output feature ?
 ---is it Numeric and Categori data.
 
-1.Categorial Data
+1.Categorial Data : if data is in form of category then calculate its frequency and plot it.
 
     which column is telling about our output column?
     calculate its frquency count with
           count plot 
           sns.countplot(df['survied])
-          df['survied'].value_count().plot('kind=bar)
-          mean_fair_price
-          -->pie char 
+          df['survied'].value_counts().plot(kind='bar')
+          
+          mean_fair_price : 
+          pie char : want into percentage 
+          df['survied'].value_counts().plot(kind='pie',auotpct ="%.2f")
           autopct=*.2f   // percentage
 
                       Seaborn and matplotlib padhle behn please 
 
 2. Numerical data
-     if data is continous then calculate max,mean 
+     if data is continous then calculate max,mean , but we can make numerical data to behave as categorical using histogram.
 
-      a. Histogram create range -- bins-- to see distribution
+      a. Histogram :) to understand the distribution of data in numerical columns. it  create range -- bins-- to see distribution
           plt.hist(df['age'],bins=50)
+          you can check min, max and distribution .
+          increases the bin you will get too many peaks , while decreasing it gets thick.
 
-      b. Distplot
+      b. Distplot :)imporvement of histplot . this is kernel density function ,it tells you about probabiltity.
           sns.distplot(df['age'])  #kernel density distribution probability  density function
+          
+          Y axis = Probability.
+          X axis = Age.
+          
+          it also tells about skeweness , same as normal distribution.
+          hist gives exact value whereas distplot gives probability of having that age.
 
-      c. Bloxplot :gives 5 number summary
+      c. Bloxplot : generally plot when data is noisy and outlier in data .it  gives 5 number summary
           sns.boxplot(df['fare])
-              median 
+              median : sort the value and mid point.
               q1--25th percentile ,q3=75 percentile
+              
+              25 percentile means 25% people is behind you.
+              
               minimum=q1-1.5*iqr
+              maximum = q3+1.5*iqr
               iqr=inter quatile range (q3-q1)
-               outlieer
+               outlieer : if any value is outside our calculated maxima and minima. 
                
       d.  minimum and maximum value
-           skew()
+           df['age'].skew() > 0 right skewed positive skewd
+           df['age'].min()
